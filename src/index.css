@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /*  Colors */
+  --color-primary: #2b2b2b;
+  --color-secondary: #4e4e4e;
+  --color-ternary: #f5f5f5;
+  --color-green: #5daf50;
+  --color-light-green: #e8f5e0;
+  --color-greener: #7ac943;
+  --color-dark-green: #0101013d;
+  /* Font Sizes */
+  --text-custom-5xl: 52px;
+  --text-custom-3xl: 32px;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+svg,
+li,
+button {
+  cursor: pointer;
+}
+li,
+p,
+a {
+  line-height: 150%;
+}
+p,
+a {
+  color: var(--color-secondary);
+}
+button {
+  line-height: 100%;
+}
+span {
+  line-height: 150%;
+  font-family: "Rubik", sans-serif;
+}
+
+h1,
+h2 {
+  line-height: 120%;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+::-webkit-scrollbar {
+  width: 4px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-green);
+  border-radius: 10px;
+}
+
+li {
+  position: relative;
+}
+
+a:hover {
+  color: var(--color-green);
+}
+
+li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: var(--color-green);
+  transition: width 0.3s ease;
+}
+
+li:hover::before {
+  width: 100%;
+}
+
+::selection {
+  background-color: #7ac943;
+  color: white;
+}
+
+@media (max-width: 767.98px) {
+  .menu {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    background: var(--color-light-green);
+    transition: all 150ms linear;
+  }
+  .show {
+    right: 0;
+  }
+}
