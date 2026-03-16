@@ -1,5 +1,5 @@
 import Icons from "./Icons";
-import { NAV_LINKS_LIST } from "../../utils/helper";
+import { HOME, NAV_LINKS_LIST } from "../../utils/helper";
 import Button from "./Button";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
@@ -16,7 +16,7 @@ const Navbar = () => {
   }, [hamBurgerState]);
 
   return (
-    <div className="w-screen bg-light-green fixed top-0 left-0 right-0 z-20">
+    <div className="w-full bg-light-green fixed top-0 left-0 right-0 z-20">
       <nav className="nav flex justify-between items-center py-5 max-w-285 px-4  mx-auto">
         <a href="/" className={`z-20 h-15 w-33`}>
           <Icons icon={"logo"} />
@@ -30,7 +30,7 @@ const Navbar = () => {
                 <li
                   onClick={() => setHamBurgetState(false)}
                   key={i}
-                  className={`md:text-base text-lg  ${nav == "Home" ? "font-semibold text-primary" : "font-normal text-secondary "} `}
+                  className={`md:text-base text-lg  ${nav == HOME ? "font-semibold text-primary" : "font-normal text-secondary "} `}
                 >
                   <a>{nav}</a>
                 </li>

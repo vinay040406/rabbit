@@ -17,6 +17,7 @@
 
 * {
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 
 svg,
@@ -33,7 +34,9 @@ p,
 a {
   color: var(--color-secondary);
 }
-button {
+button,
+h3,
+h5 {
   line-height: 100%;
 }
 span {
@@ -47,9 +50,13 @@ h2 {
   font-weight: 700;
   color: var(--color-primary);
 }
+h4 {
+  line-height: 120%;
+}
+
 ::-webkit-scrollbar {
   width: 4px;
-  height: 1px;
+  height: 4px;
 }
 
 ::-webkit-scrollbar-track {
@@ -64,6 +71,7 @@ h2 {
 
 li {
   position: relative;
+  width: fit-content;
 }
 
 a:hover {

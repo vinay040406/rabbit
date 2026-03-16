@@ -8,7 +8,7 @@ const Section3 = () => {
        items-center"
       >
         <img
-          src="/assets/Images/Png/Section3Image.png"
+          src="/assets/Images/webp/Section3Image.webp"
           alt=""
           className="h-1/2 w-1/2"
         />

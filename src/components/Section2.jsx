@@ -1,11 +1,10 @@
-import React from "react";
 import { SECTION2_DATA_LIST } from "../utils/helper";
 import Icons from "./common/Icons";
 import Heading from "./common/Heading";
 
 const Section2 = () => {
   return (
-    <div className="mt-22.5 w-screen lg:p-15 p-4 bg-ternary">
+    <div className="md:mt-22.5 mt-15 w-full lg:p-15 p-4 bg-ternary">
       <div className="max-w-285 w-full flex flex-col md:gap-10 mx-auto text-center">
         <Heading h2={"Better Tech. Better Team. Better Lending"} />
         <div className="grid grid-cols-2 md:grid-cols-4 md:gap-7.25  justify-center">

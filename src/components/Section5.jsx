@@ -4,9 +4,9 @@ import Icons from "./common/Icons";
 
 const Section5 = () => {
   return (
-    <div className="w-full mx-auto bg-[linear-gradient(to_bottom,#e8f5e0_0%,#f0f9ea_40%,white_100%)] px-4 py-25.75">
+    <div className="w-full mx-auto bg-[linear-gradient(to_bottom,#e8f5e0_0%,#f0f9ea_40%,white_100%)] px-4 md:py-25.75 py-15">
       <div className="max-w-[734.29px] w-full mx-auto relative flex items-center justify-center">
-        <Icons icon={"rabbit"} pathClass={"fill-[#e8f5e0]"} className={""} />
+        <Icons icon={"rabbit"} />
 
         <div className="absolute flex flex-col  w-full items-center text-center px-4">
           <div className="flex flex-col max-w-147.5">

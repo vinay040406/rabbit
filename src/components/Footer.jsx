@@ -5,17 +5,20 @@ const Footer = () => {
   const date = new Date().getFullYear();
 
   return (
-    <div className="w-full bg-ternary mt-99.5 px-4">
-      <div className="max-w-285 mx-auto relative flex flex-col items-center pt-50 gap-15 ">
-        <a href="/" className="max-w-74.5 w-full max-h-34 ">
-          <Icons icon={"logo"} />
+    <div className="w-full bg-ternary md:mt-99.5 mt-45 px-4">
+      <div className="max-w-285 mx-auto relative flex flex-col items-center pt-50 md:gap-15 ">
+        <a href="/" className="md:max-w-74.5 w-full max-h-34 flex items-start ">
+          <Icons icon={"logo"} className={"md:h-full md:w-full h-30 w-40"} />
         </a>
-        <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-6  w-full px-4">
+        <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-6  w-full">
           <div className="flex flex-col gap-3">
-            <span className="text-secondary font-semibold">
+            <h5 className="text-secondary font-semibold leading-none">
               Rated 4.9 on trustpilot.
-            </span>
-            <Icons icon={"trustPilot"} className={"md:h-20.25 md:w-42.75 h-15 w-30"} />
+            </h5>
+            <Icons
+              icon={"trustPilot"}
+              className={"md:h-20.25 md:w-42.75 h-15 w-30"}
+            />
           </div>
           {FOOTER_LINKS.map((item, i) => (
             <div className="flex flex-col gap-3" key={i}>
@@ -65,7 +68,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="text-center pb-3.5 w-screen flex flex-col gap-4 px-4">
+        <div className="text-center pb-3.5 w-full flex flex-col gap-4 px-4">
           <span className="border border-primary opacity-10 w-full"></span>
           <p>© {date} Rabbit Funding, LLC. All rights reserved.</p>
         </div>
