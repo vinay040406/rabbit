@@ -1,12 +1,14 @@
+import { PROGRAMS, HOME, WORKS, TESTIMONIAL, ABOUT } from "./constant";
+
 export const NAV_LINKS_LIST = [
-  "Home",
-  "Programs",
-  "How It Works",
-  "Testimonial",
-  "About",
+  { title: "Home", link: HOME },
+  { title: "Programs", link: PROGRAMS },
+  { title: "How It Works", link: WORKS },
+  { title: "Testimonial", link: TESTIMONIAL },
+  { title: "About", link: ABOUT },
 ];
 
-export const SECTION2_DATA_LIST = [
+export const BETTER_DATA_LIST = [
   {
     svg: "smarter",
     title: "Smarter Systems. Faster Funding.",
@@ -25,7 +27,7 @@ export const SECTION2_DATA_LIST = [
   },
 ];
 
-export const TESTIMONIALS = [
+export const TESTIMONIALS_DATA = [
   {
     name: "Mike T.",
     profession: "Fabrication Shop Owner, TX",
@@ -52,7 +54,7 @@ export const TESTIMONIALS = [
   },
 ];
 
-export const SECTION6_DATA_LIST = [
+export const FUNDING_DATA_LIST = [
   {
     name: "Karina M.",
     profession: "Beauty Business, Miami FL",
@@ -83,5 +85,3 @@ export const FOOTER_LINKS = [
     links: ["Terms & Conditions", "Privacy Policy"],
   },
 ];
-
-export const HOME = "Home";

@@ -1,5 +1,5 @@
-import { FOOTER_LINKS } from "../utils/helper";
-import Icons from "./common/Icons";
+import { FOOTER_LINKS } from "../../utils/helper";
+import Icons from "./Icons";
 
 const Footer = () => {
   const date = new Date().getFullYear();

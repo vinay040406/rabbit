@@ -1,6 +1,6 @@
 import Heading from "./common/Heading";
 
-const Section3 = () => {
+const Behind = () => {
   return (
     <div className="w-full md:my-42.5 my-15 px-4 lg:px-0">
       <div
@@ -9,7 +9,7 @@ const Section3 = () => {
       >
         <img
           src="/assets/Images/webp/Section3Image.webp"
-          alt=""
+          alt="behindImage"
           className="max-h-88.5 max-w-123 w-full object-cover"
         />
         <div className="flex flex-col mt-10 max-w-124 gap-3 lg:text-left text-center">
@@ -27,4 +27,4 @@ const Section3 = () => {
   );
 };
 
-export default Section3;
+export default Behind;

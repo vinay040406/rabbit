@@ -14,12 +14,14 @@ const Card = ({ desc, name, profession, image }) => {
         <div className="flex gap-3">
           <img
             src={image}
-            alt=""
+            alt="cardImage"
             className="h-12.5 w-12.5 rounded-full object-cover "
           />
           <div className="flex flex-col justify-center">
             <h3 className="text-primary font-semibold text-base">{name}</h3>
-            <p className="text-primary text-xs md:text-sm font-normal">{profession}</p>
+            <p className="text-primary text-xs md:text-sm font-normal">
+              {profession}
+            </p>
           </div>
         </div>
       </div>

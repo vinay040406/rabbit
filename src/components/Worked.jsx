@@ -2,7 +2,7 @@ import Button from "./common/Button";
 import Heading from "./common/Heading";
 import Icons from "./common/Icons";
 
-const Section5 = () => {
+const Worked = () => {
   return (
     <div className="w-full mx-auto bg-linear-to-b from-[rgba(76,175,80,0.1)] to-[rgba(76,175,80,0)] px-4 md:py-25.75 py-15">
       <div className="max-w-[734.29px] w-full mx-auto relative flex items-center justify-center">
@@ -35,4 +35,4 @@ const Section5 = () => {
   );
 };
 
-export default Section5;
+export default Worked;

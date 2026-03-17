@@ -1,6 +1,6 @@
 import "./App.css";
 import Navbar from "./components/common/Navbar";
-import Footer from "./components/Footer";
+import Footer from "./components/common/Footer";
 import Hero from "./components/Hero";
 import Better from "./components/Better";
 import Behind from "./components/Behind";

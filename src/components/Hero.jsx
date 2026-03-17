@@ -27,7 +27,7 @@ const Hero = () => {
         </div>
         <img
           src="/assets/Images/webp/Hero.webp"
-          alt=""
+          alt="heroImage"
           className="xl:translate-x-22 max-w-full"
         />
       </div>
