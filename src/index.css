@@ -30,17 +30,13 @@ p,
 a {
   line-height: 150%;
 }
-p,
-a {
-  color: var(--color-secondary);
-}
+
 button,
 h3,
 h5 {
   line-height: 100%;
 }
-span {
-  line-height: 150%;
+h5 {
   font-family: "Rubik", sans-serif;
 }
 
@@ -105,7 +101,7 @@ li:hover::before {
     top: 0;
     right: -100%;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     align-items: center;
     justify-content: center;
     background-color: transparent;

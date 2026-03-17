@@ -16,15 +16,15 @@ const Navbar = () => {
   }, [hamBurgerState]);
 
   return (
-    <div className="w-full bg-light-green fixed top-0 left-0 right-0 z-20">
+    <div className="w-full bg-transparent backdrop-blur-2xl  fixed top-0 left-0 right-0 z-20">
       <nav className="nav flex justify-between items-center py-5 max-w-285 px-4  mx-auto">
-        <a href="/" className={`z-20 h-15 w-33`}>
+        <a href="/" className={`z-20 md:h-15 md:w-33 h-10 w-20`}>
           <Icons icon={"logo"} />
         </a>
         <div
-          className={`justify-end lg:gap-44.25 md:gap-4 gap-4 items-center w-full flex menu ${hamBurgerState && "show"}`}
+          className={`justify-end lg:gap-44.25 md:gap-4 gap-4 items-center w-full flex menu ${hamBurgerState && "show"} `}
         >
-          <ul className="lg:gap-6 md:gap-3 gap-2 flex md:flex-row flex-col text-center ">
+          <ul className="lg:gap-6 md:gap-3 gap-2 flex md:flex-row flex-col text-center items-center ">
             {NAV_LINKS_LIST.map((nav, i) => {
               return (
                 <li
@@ -40,7 +40,7 @@ const Navbar = () => {
           <Button
             text={"Contact Us"}
             className={
-              "border-2 md:border-primary lg:px-8.25 px-6 py-4 rounded-full text-primary  hover:border-transparent hover:text-white hover:bg-primary duration-300 ease-in"
+              "border-2 md:border-primary lg:px-7.5  md:px-6 px-4 md:py-4.5 py-2.5 rounded-full text-primary  hover:border-transparent hover:text-white hover:bg-primary duration-300 ease-in"
             }
           />
         </div>
@@ -48,14 +48,14 @@ const Navbar = () => {
         {hamBurgerState ? (
           <span
             onClick={handleHamburgerClick}
-            className="fixed top-8 right-6 text-3xl md:hidden flex"
+            className="fixed top-6 right-6  z-10 text-3xl md:hidden flex"
           >
             <RxCross2 />
           </span>
         ) : (
           <span
             onClick={handleHamburgerClick}
-            className="fixed top-8 right-6 text-3xl md:hidden flex  "
+            className="fixed top-6 right-6 text-3xl md:hidden flex  "
           >
             <GiHamburgerMenu />
           </span>

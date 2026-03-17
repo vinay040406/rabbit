@@ -17,11 +17,11 @@ const Section4 = () => {
   }, []);
 
   return (
-    <div className="max-w-285 mx-auto flex flex-col items-center gap-15 px-4 md:mb-42.5 mb-15">
-      <Heading h2={"Real People. Real Results."} />
-      <div className="grid md:grid-cols-2 gap-6 md:px-0 px-6">
+    <div className="max-w-285 mx-auto flex flex-col items-center md:gap-15 gap-5 px-4 md:mb-42.5 mb-15">
+      <Heading h2={"Real People. Real Results."} parentCss={"text-center"} />
+      <div className="grid sm:grid-cols-2 gap-6 md:px-0 px-6 xl:w-285 w-full">
         {TESTIMONIALS.slice(0, visibleCount).map((card, i) => (
-          <div key={i} className="flex">
+          <div key={i} className="flex lg:h-98.5 h-auto">
             <Card
               image={card.image}
               name={card.name}
